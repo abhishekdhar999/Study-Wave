@@ -52,7 +52,7 @@ const styles = {
   },
   image: {
     width: '100%',
-    borderRadius: '40px 40px 40px 40px', // to match the top border radius of the container
+    borderRadius: '40px 40px 40px 40px', // to match the top border radius of the containe
   },
   heading: {
     fontSize: '2.5rem',
