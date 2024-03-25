@@ -7,11 +7,11 @@ export default function MostPopular() {
 
                 <div className='text flex md:flex-row flex-col justify-around  items-center'>
                     <div className='heding w-1/3 mx-24'>
-                        <h1 className='text-4xl font-bold text-gray-600'>Most Popular</h1>
-                        <h1 className='text-4xl font-bold text-amber-500'>Courses</h1>
+                        <h1 className='text-4xl font-semibold text-gray-800'>Most Popular</h1>
+                        <h1 className='text-4xl font-bold text-cyan-600'>Courses</h1>
                     </div>
                     <div className='btn w-1/3 my-2'>
-                        <button type="button" class="text-gray-600 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">explore more</button>
+                    <button type="button" class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Explore More</button>
                     </div>
                 </div>
 

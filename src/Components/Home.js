@@ -1,15 +1,18 @@
 import React from 'react'
-import img from '../'
+import { Link } from 'react-router-dom';
 import { TfiWorld } from "react-icons/tfi";
 import { GiTeacher } from "react-icons/gi";
 import { PiStudent } from "react-icons/pi";
 import { FaLaptop } from "react-icons/fa";
 import frontImg from '../../src/design.svg'
 import { FaLongArrowAltRight } from "react-icons/fa";
+import TestLogo from './TestLogo';
 export default function Home() {
     return (
 
         <>
+<div  className="bg-cyan-400 h-1 w-[100vw]"></div>
+<div  className="bg-gray-400 h-1 w-[100vw] my-1"></div>
             <div className=' my-72 md:my-14 flex md:flex-row flex-col justify-center mx-4 h-[80vh] '>
 
                 <div className='left md:w-[600px] flex flex-col justify-center '>
@@ -24,8 +27,9 @@ export default function Home() {
                     </div>
 
                     <div className='btns flex my-4'>
+                        <Link to="/bookclass">
                         <button type="button" class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Start Free</button>
-
+                        </Link>
                         <button type="button" class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Contacts</button>
                     </div>
                 </div>
@@ -39,7 +43,9 @@ export default function Home() {
                 </div>
             </div>
 
-
+            <div>
+    <TestLogo/>
+</div>
 
             <div className='flex sm:flex-row flex-col sm:justify-between justify-center text-center items-center sm:mx-24 my-12'>
                 <div className='educators '>
@@ -85,7 +91,7 @@ export default function Home() {
 
             <div className='working flex flex-col justify-center text-center '>
                 <div className='heading'>
-                    <h1 className='text-4xl text-gray-600 font-semibold'>How Does <span className=' text-cyan-600 font-bold underline'>The Study Wave</span> Works ?</h1>
+                    <h1 className='text-4xl text-gray-800  font-medium'>How Does <span className=' text-cyan-600 font-bold underline'>The Study Wave</span> Works ?</h1>
                 </div>
 
                 <div className='steps my-4'>
@@ -97,7 +103,7 @@ export default function Home() {
                         <h1 className='step-heading font-semibold text-3xl text-cyan-700 mx-4'>Step One</h1>
                         </div>
                         <div className='steps-text my-2'>
-                                <p className='text-xl font-medium text-gray-500'>Register Yourself With Us by Booking a Class</p>
+                                <p className='text-xl font-medium text-gray-600'>Register Yourself With Us by Booking a Class</p>
                         </div>
                     </div>
 
@@ -109,7 +115,7 @@ export default function Home() {
                         <h1 className='step-heading font-semibold text-3xl text-cyan-700 mx-6'>Step two</h1>
                         </div>
                         <div className='steps-text my-2'>
-                                <p className='text-xl font-medium text-gray-500'>After registering we will Contact you for further Scheduling</p>
+                                <p className='text-xl font-medium text-gray-600'>After registering we will Contact you for further Scheduling</p>
                         </div>
                     </div>
 
@@ -121,11 +127,12 @@ export default function Home() {
                         <h1 className='step-heading font-semibold text-3xl text-cyan-700 mx-4'>Step Three</h1>
                         </div>
                         <div className='steps-text my-2'>
-                                <p className='text-xl font-medium text-gray-500'>Any Queries Reach Out to us</p>
+                                <p className='text-xl font-medium text-gray-600'>Any Queries Reach Out to us</p>
                         </div>
                     </div>
                 </div>
             </div>
+
 
             
         </>

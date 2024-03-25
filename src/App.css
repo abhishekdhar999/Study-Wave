@@ -124,7 +124,7 @@
   letter-spacing: 0.4rem;
 }
 
-@keyframes shadows {
+/* @keyframes shadows {
   0% {
     text-shadow: none;
   }
@@ -173,7 +173,7 @@
   100% {
     text-shadow: none;
   }
-}
+} */
 
 /* .shadows {
   text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
@@ -223,6 +223,35 @@
    4px 4px black, 
    5px 5px black, 
    6px 6px black;
+   -webkit-transition: all 0.12s ease-out;
+   -moz-transition:    all 0.12s ease-out;
+   -ms-transition:     all 0.12s ease-out;
+   -o-transition:      all 0.12s ease-out;
+}
+.headExplore {
+  color: white; 
+   font: bold 32px Helvetica, Arial, Sans-Serif;
+   text-shadow:  1px 1px black, 
+   2px 2px black, 
+   3px 3px black, 
+   4px 4px black, 
+   5px 5px black, 
+   6px 6px black;
+   -webkit-transition: all 0.12s ease-out;
+   -moz-transition:    all 0.12s ease-out;
+   -ms-transition:     all 0.12s ease-out;
+   -o-transition:      all 0.12s ease-out;
+}
+
+.head1 {
+  color: rgb(90, 119, 236); 
+   font: bold 52px Helvetica, Arial, Sans-Serif;
+   text-shadow:  1px 1px black, 
+   2px 2px rgb(202, 199, 199), 
+   3px 3px rgb(202, 199, 199), 
+   4px 4px rgb(202, 199, 199), 
+   5px 5px rgb(202, 199, 199), 
+   6px 6px rgb(202, 199, 199);
    -webkit-transition: all 0.12s ease-out;
    -moz-transition:    all 0.12s ease-out;
    -ms-transition:     all 0.12s ease-out;

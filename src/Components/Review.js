@@ -16,20 +16,20 @@ export default function Review() {
                 <div className='h-2 w-[40vw] text-blue-900 bg-cyan-700'></div>
                 <div className='h-2 w-[40vw] text-blue-900 bg-cyan-700'></div>
             </div>
-            <div className='flex justify-center items center mx-4'>
-                <div className='one'>
-                    <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="https://cdn.pixabay.com/photo/2018/07/05/16/59/students-3518726_1280.jpg" alt="Bonnie " />
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-blue-900">Easa</h5>
-                    <p class="font-normal text-gray-700 dark:text-gray-600">"This platform has truly revolutionized my learning experience! The lessons are engaging, comprehensive, and crafted with such clarity that even the most complex topics become accessible. It's not just an educational website; it's a beacon of knowledge that ignites a genuine passion for learning."</p>
+            <div className='flex justify-center items center mx-4 md:flex-row flex-col '>
+                <div className='one  flex-1 my-2'>
+                    <img className="w-24 h-24 mb-3 rounded-full shadow-lg" src="https://cdn.pixabay.com/photo/2018/07/05/16/59/students-3518726_1280.jpg" alt="Bonnie " />
+                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-blue-900">Easa</h5>
+                    <p className=" bg-slate-200 p-5 shadow-lg shadow-gray-900 font-normal text-gray-700 dark:text-gray-600 rounded-lg">"This platform has truly revolutionized my learning experience! The lessons are engaging, comprehensive, and crafted with such clarity that even the most complex topics become accessible. It's not just an educational website.It is a beacon of knowledge one can only wish for.It is Amazing platform i have come across with."</p>
 
 
                 </div>
 
 
-                <div className='two'>
-                    <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="https://cdn.pixabay.com/photo/2018/07/05/16/59/students-3518726_1280.jpg" alt="Bonnie " />
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-blue-900">David</h5>
-                    <p class="font-normal text-gray-700 dark:text-gray-600">"I can't recommend this website enough! It's been a game-changer in my educational journey. The interactive elements and personalized learning paths have helped me grasp concepts more effectively than any textbook ever could. A must-visit for anyone looking to deepen their understanding and enjoy the process along the way."</p>
+                <div className='two mx-2 flex-1 my-2'>
+                    <img className="w-24 h-24 mb-3 rounded-full shadow-lg" src="https://cdn.pixabay.com/photo/2018/07/05/16/59/students-3518726_1280.jpg" alt="Bonnie " />
+                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-blue-900">David</h5>
+                    <p className="bg-slate-200 p-5 shadow-lg shadow-gray-900 font-normal text-gray-700 dark:text-gray-600 rounded-lg">"I can't recommend this website enough! It's been a game-changer in my educational journey. The interactive elements and personalized learning paths have helped me grasp concepts more effectively than any textbook ever could. A must-visit for anyone looking to deepen their understanding and enjoy the process along the way."</p>
 
 
                 </div>
@@ -37,10 +37,10 @@ export default function Review() {
 
 
 
-                <div className='three'>
-                    <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="https://cdn.pixabay.com/photo/2018/07/05/16/59/students-3518726_1280.jpg" alt="Bonnie " />
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-blue-900">Elena</h5>
-                    <p class="font-normal text-gray-700 dark:text-gray-600">"From the intuitive layout to the high-quality content, this educational website stands out as a top-tier learning platform. The expertly designed courses, accompanied by practical examples, have provided me with invaluable insights and significantly improved my academic performance. Truly a treasure trove for learners."</p>
+                <div className='three mx-2 flex-1 my-2'>
+                    <img className="w-24 h-24 mb-3 rounded-full shadow-lg" src="https://cdn.pixabay.com/photo/2018/07/05/16/59/students-3518726_1280.jpg" alt="Bonnie " />
+                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-blue-900">Elena</h5>
+                    <p className="bg-slate-200 p-5 shadow-lg shadow-gray-900 font-normal text-gray-700 dark:text-gray-600 rounded-lg">"From the intuitive layout to the high-quality content, this educational website stands out as a top-tier learning platform. The expertly designed courses, accompanied by practical examples, have provided me with invaluable insights and significantly improved my academic performance. Truly a treasure trove for learners."</p>
 
 
                 </div>
@@ -48,9 +48,9 @@ export default function Review() {
 
 
                 {/* <div className='four'>
-                    <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="https://cdn.pixabay.com/photo/2018/07/05/16/59/students-3518726_1280.jpg" alt="Bonnie " />
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Skand</h5>
-                    <p class="font-normal text-gray-700 dark:text-gray-400">"This platform has exceeded all my expectations! It offers a unique blend of comprehensive curriculum and interactive learning that caters to various learning styles. What sets it apart is its commitment to making education accessible, engaging, and enjoyable. It's not just about learning; it's about falling in love with the process of acquiring knowledge."</p>
+                    <img className="w-24 h-24 mb-3 rounded-full shadow-lg" src="https://cdn.pixabay.com/photo/2018/07/05/16/59/students-3518726_1280.jpg" alt="Bonnie " />
+                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Skand</h5>
+                    <p className="font-normal text-gray-700 dark:text-gray-400">"This platform has exceeded all my expectations! It offers a unique blend of comprehensive curriculum and interactive learning that caters to various learning styles. What sets it apart is its commitment to making education accessible, engaging, and enjoyable. It's not just about learning; it's about falling in love with the process of acquiring knowledge."</p>
 
 
                 </div> */}
