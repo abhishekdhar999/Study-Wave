@@ -11,8 +11,8 @@ export default function Home() {
     return (
 
         <>
-<div  className="bg-cyan-400 h-1 w-[100vw]"></div>
-<div  className="bg-gray-400 h-1 w-[100vw] my-1"></div>
+            <div className="bg-cyan-400 h-1 w-[100vw]"></div>
+            <div className="bg-blue-400 h-1 w-[100vw] my-1"></div>
             <div className=' my-72 md:my-14 flex md:flex-row flex-col justify-center mx-4 h-[80vh] '>
 
                 <div className='left md:w-[600px] flex flex-col justify-center '>
@@ -28,9 +28,11 @@ export default function Home() {
 
                     <div className='btns flex my-4'>
                         <Link to="/bookclass">
-                        <button type="button" class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Start Free</button>
+                            <button type="button" class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Book Free Class</button>
                         </Link>
-                        <button type="button" class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Contacts</button>
+                        <Link to="/explorepage">
+                            <button type="button" class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Learn with us</button>
+                        </Link>
                     </div>
                 </div>
                 {/* <div className='h-[80vh] w-[2000px]'>
@@ -44,8 +46,8 @@ export default function Home() {
             </div>
 
             <div>
-    <TestLogo/>
-</div>
+                <TestLogo />
+            </div>
 
             <div className='flex sm:flex-row flex-col sm:justify-between justify-center text-center items-center sm:mx-24 my-12'>
                 <div className='educators '>
@@ -70,7 +72,7 @@ export default function Home() {
 
                 <div className='educators '>
                     <div className='logo'>
-                        <span className='w-[500px]'><FaLaptop  className='h-[100px] w-[100px] text-cyan-600 rounded-3xl' /></span>
+                        <span className='w-[500px]'><FaLaptop className='h-[100px] w-[100px] text-cyan-600 rounded-3xl' /></span>
                     </div>
                     <div className='text flex flex-col'>
                         <h2 className='font-bold text-xl'>2000+</h2>
@@ -96,45 +98,45 @@ export default function Home() {
 
                 <div className='steps my-4'>
                     <div className='step1'>
-                    <div className='flex items-center justify-center '>
+                        <div className='flex items-center justify-center '>
                             <span >
-                            <FaLongArrowAltRight className=' w-8 h-8'/>
+                                <FaLongArrowAltRight className=' w-8 h-8' />
                             </span>
-                        <h1 className='step-heading font-semibold text-3xl text-cyan-700 mx-4'>Step One</h1>
+                            <h1 className='step-heading font-semibold text-3xl text-cyan-700 mx-4'>Step One</h1>
                         </div>
                         <div className='steps-text my-2'>
-                                <p className='text-xl font-medium text-gray-600'>Register Yourself With Us by Booking a Class</p>
+                            <p className='text-xl font-medium text-gray-600'>Register Yourself With Us by Booking a Class</p>
                         </div>
                     </div>
 
                     <div className='step2'>
                         <div className='flex items-center justify-center '>
                             <span >
-                            <FaLongArrowAltRight className=' w-8 h-8'/>
+                                <FaLongArrowAltRight className=' w-8 h-8' />
                             </span>
-                        <h1 className='step-heading font-semibold text-3xl text-cyan-700 mx-6'>Step two</h1>
+                            <h1 className='step-heading font-semibold text-3xl text-cyan-700 mx-6'>Step two</h1>
                         </div>
                         <div className='steps-text my-2'>
-                                <p className='text-xl font-medium text-gray-600'>After registering we will Contact you for further Scheduling</p>
+                            <p className='text-xl font-medium text-gray-600'>After registering we will Contact you for further Scheduling</p>
                         </div>
                     </div>
 
                     <div className='step3'>
-                    <div className='flex items-center justify-center '>
+                        <div className='flex items-center justify-center '>
                             <span >
-                            <FaLongArrowAltRight className=' w-8 h-8'/>
+                                <FaLongArrowAltRight className=' w-8 h-8' />
                             </span>
-                        <h1 className='step-heading font-semibold text-3xl text-cyan-700 mx-4'>Step Three</h1>
+                            <h1 className='step-heading font-semibold text-3xl text-cyan-700 mx-4'>Step Three</h1>
                         </div>
                         <div className='steps-text my-2'>
-                                <p className='text-xl font-medium text-gray-600'>Any Queries Reach Out to us</p>
+                            <p className='text-xl font-medium text-gray-600'>Any Queries Reach Out to us</p>
                         </div>
                     </div>
                 </div>
             </div>
 
 
-            
+
         </>
 
     )

@@ -1,15 +1,25 @@
 import React from 'react'
 import { useState } from 'react'
 import img from '../utils/images/emailmodalImg.avif'
+import { useNavigate } from 'react-router-dom'
 export default function EmailModal() {
 const [input,setInput] = useState({name:"",email:"",number:""})
-
+const navigate = useNavigate()
 
 const handleChange = (e)=>{
     setInput({...input,[e.target.name]:e.target.value})
 }
-    const handleSubmit = async (e) => {
-e.preventDefault();
+    const handleSubmit = async () => {
+
+if(!input.name || !input.email || !input.number){
+    navigate("/")
+}else if(input.number.length <9){
+    navigate("/")
+}
+
+else{
+
+
         const response = await fetch("http://localhost:3001/sendEmail", {
             method: "POST",
             
@@ -26,7 +36,9 @@ e.preventDefault();
               console.log("success")
               alert("email send successfully")
             }
-      };
+      }
+    } 
+    
     return (
     <>
             <div>
@@ -56,7 +68,7 @@ e.preventDefault();
                                         <div>
                                                 <label for="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Name</label>
                                                 <input onChange={handleChange}
-                                                value={input.name} type="name" name="name" id="name" className=" bor bg-gray-50 border border-white text-black sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-300 dark:border-black dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="alex" required="" />
+                                                value={input.name} type="name" name="name" id="name" className=" bor bg-gray-50 border border-white text-black sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-300 dark:border-black dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="More than Five Characters" required />
                                             </div>
 
                                             <div>
@@ -68,10 +80,10 @@ e.preventDefault();
                                                 <label for="mobileno" className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Mobile</label>
                                                 <input onChange={handleChange} 
                                                 value={input.number} type="text" name="number" id="number" placeholder="" className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-300 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" 
-                                                required="" />
+                                                required />
                                             </div>
                                             
-                                            <button onClick={handleSubmit} type="submit" className="w-full text-white bg-blue-700 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Book A Free Demo Class</button>
+                                            <button onClick={handleSubmit} type="submit" className={`w-full text-white bg-blue-700 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 ${!(input.name.length > 5 && input.email.length > 5 && input.number.length > 5) ? "opacity-50 cursor-not-allowed" : ""}`} >Book A Free Demo Class</button>
                                             
                                             <p className='  font-serif'>After registring with us we will get in touch with u shortly </p>
                                         </form>
