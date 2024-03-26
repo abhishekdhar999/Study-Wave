@@ -124,7 +124,7 @@ export default function ExplorePage() {
             {/* first subject */}
             <div className='flex-1 card'>
               <span className="flex mx-2 flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                <img className="object-cover w-full rounded-t-lg h-96 md:h-auto md:h-44 md:rounded-none md:rounded-s-lg" src="https://imgs.search.brave.com/JUFEk3UZanDUvcig-hNnfxQngeGHiXYvz08eTrmkOkY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTY5/OTk5MjMyL3Bob3Rv/L2Jpb3RlY2hub2xv/Z3kuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPVV1eVdlYjBQ/WGlNSzVDTnd3UXBF/ZmVzUzE5RHh6RHN1/cUxEVm0tUVR4ZU09" alt="" />
+                <img className="object-cover w-full rounded-t-lg h-96  md:h-44 md:rounded-none md:rounded-s-lg" src="https://imgs.search.brave.com/JUFEk3UZanDUvcig-hNnfxQngeGHiXYvz08eTrmkOkY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTY5/OTk5MjMyL3Bob3Rv/L2Jpb3RlY2hub2xv/Z3kuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPVV1eVdlYjBQ/WGlNSzVDTnd3UXBF/ZmVzUzE5RHh6RHN1/cUxEVm0tUVR4ZU09" alt="" />
                 <div className="flex flex-col justify-between p-4 leading-normal">
                   <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Biology</h5>
                   <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Discover life's wonders from the microscopic to the macroscopic with our biology series.</p>

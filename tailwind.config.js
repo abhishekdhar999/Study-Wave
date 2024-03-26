@@ -7,6 +7,7 @@ module.exports = {
         txtColor: '#935387', // Custom text color
         bgColor: '#abcdef', // Custom background color
       },
+      
     },
   },
   plugins: [],

@@ -4,6 +4,7 @@ import Home from '../Components/Home'
 import CallingAbout from '../Components/CallingAbout';
 import MostPopular from '../Components/MostPopular';
 import Review from '../Components/Review';
+import ContactUs from '../Components/Contact';
 export default function LandingPage() {
   return (
     <>
@@ -14,6 +15,9 @@ export default function LandingPage() {
       <CallingAbout></CallingAbout>
       <MostPopular></MostPopular>
       <Review></Review>
+     
+    <ContactUs/>
+
     </div>
       
     </>

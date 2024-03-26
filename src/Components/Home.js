@@ -7,6 +7,7 @@ import { FaLaptop } from "react-icons/fa";
 import frontImg from '../../src/design.svg'
 import { FaLongArrowAltRight } from "react-icons/fa";
 import TestLogo from './TestLogo';
+import ContactUs from './Contact';
 export default function Home() {
     return (
 

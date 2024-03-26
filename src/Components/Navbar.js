@@ -32,7 +32,7 @@ export default function Navbar() {
           <a href="/" className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
         </li>
         <li className='hover:w-[40px] hover:h-[30px] hover:  '>
-          <a href="/" className="block py-2 px-3 text-gray-900 rounded  md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500  md:dark:hover:bg-transparent  ">About</a>
+          <a href="/about" className="block py-2 px-3 text-gray-900 rounded  md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500  md:dark:hover:bg-transparent  ">About</a>
         </li>
         <li>
           <Link to="/explorepage">
@@ -41,7 +41,9 @@ export default function Navbar() {
         </li>
         
         <li>
+          <Link to="/contact">
           <a href="/" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+          </Link>
         </li>
       </ul>
     </div>}
@@ -53,7 +55,9 @@ export default function Navbar() {
           <a href="/" className="custom-button block py-2 px-3 text-white bg-white rounded md:bg-transparent md:text-black md:p-0 dark:text-white md:dark:text-black font-serif font-bold" aria-current="page">Home</a>
         </li>
         <li>
-          <a href="/" className="custom-button block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent font-serif font-bold">About</a>
+          <Link to="/about">
+          <span  className="custom-button block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent font-serif font-bold">About</span>
+          </Link>
         </li>
         <li>
         <Link to="/explorepage">
@@ -62,7 +66,9 @@ export default function Navbar() {
         </li>
         
         <li>
+          <Link to="/contact">
           <a href="/" className="custom-button block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent font-serif font-bold">Contact</a>
+          </Link>
         </li>
       </ul>
     </div>
